@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nihao_flutter/demo/form_demo.dart';
+import 'package:nihao_flutter/demo/material_components.dart';
 import 'demo/layout_demo.dart';
 import 'demo/basic_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
@@ -18,18 +20,23 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: NavigatorDemo(),
-      home: Home(),
+      // home: Home(),
       // home: SliverDemo(),
-      // initialRoute: '/about',
+      initialRoute: '/mdc',
       // initialRoute: '/',
+      // 顶层路由表
       routes: {
         // '/': (context) => NavigatorDemo(),
         '/about': (context) => AboutPage(title: 'About'),
+        '/form': (context) => FormDemo(),
+        '/mdc': (context) => MaterialComponents(),
       },
+      // 全局Theme
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white70,
+        accentColor: Color.fromRGBO(3, 54, 255, 1.0),
       ),
     );
   }
