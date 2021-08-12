@@ -6,6 +6,10 @@ class FormDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('FormDemo'),
+        elevation: 0.0,
+      ),
       // Apply the given theme [data] to [child] 只覆盖一部分主题内容
       body: Theme(
         data: Theme.of(context).copyWith(

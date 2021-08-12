@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:nihao_flutter/demo/paginated_data_table_demo.dart';
+import 'package:nihao_flutter/demo/radio_demo.dart';
+import 'package:nihao_flutter/demo/slider_demo.dart';
+import 'package:nihao_flutter/demo/snack_bar_demo.dart';
+import 'package:nihao_flutter/demo/stepper_demo.dart';
+import 'package:nihao_flutter/demo/switch_demo.dart';
 import './button_demo.dart';
 import './floating_action_button_demo.dart';
 import './popup_menu_button_demo.dart';
-// import './form_demo.dart';
-// import './checkbox_demo.dart';
-// import './radio_demo.dart';
-// import './switch_demo.dart';
-// import './slider_demo.dart';
-// import './datetime_demo.dart';
-// import './simple_dialog_demo.dart';
-// import './alert_dialog_demo.dart';
+import './form_demo.dart';
+import './checkbox_demo.dart';
+import 'bottom_sheet_demo.dart';
+import 'card_demo.dart';
+import 'chip_demo.dart';
+import 'data_table_demo.dart';
+import 'datetime_demo.dart';
+import './simple_dialog_demo.dart';
+import './alert_dialog_demo.dart';
+import 'expansion_panel_demo.dart';
 // import './bottom_sheet_demo.dart';
 // import './snack_bar_demo.dart';
 // import './expansion_panel_demo.dart';
@@ -29,6 +37,23 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(title: 'StepperDemo', page: StepperDemo()),
+          ListItem(title: 'CardDemo', page: CardDemo()),
+          ListItem(
+              title: 'PaginatedDataTableDemo', page: PaginatedDataTableDemo()),
+          ListItem(title: 'DataTableDemo', page: DataTableDemo()),
+          ListItem(title: 'ChipDemo', page: ChipDemo()),
+          ListItem(title: 'ExpansionPanelDemo', page: ExpansionPanelDemo()),
+          ListItem(title: 'SnackBarDemo', page: SnackBarDemo()),
+          ListItem(title: 'BottomSheetDemo', page: BottomSheetDemo()),
+          ListItem(title: 'SimpleDialogDemo', page: SimpleDialogDemo()),
+          ListItem(title: 'AlertDialogDemo', page: AlertDialogDemo()),
+          ListItem(title: 'DateTimeDemo', page: DateTimeDemo()),
+          ListItem(title: 'SliderDemo', page: SliderDemo()),
+          ListItem(title: 'SwitchDemo', page: SwitchDemo()),
+          ListItem(title: 'RadioDemo', page: RadioDemo()),
+          ListItem(title: 'Checkbox', page: CheckboxDemo()),
+          ListItem(title: 'Form', page: FormDemo()),
           ListItem(title: 'PopupMenuButton', page: PopupMenuButtonDemo()),
           ListItem(title: 'Button', page: ButtonDemo()),
           ListItem(
