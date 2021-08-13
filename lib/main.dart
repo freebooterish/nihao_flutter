@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nihao_flutter/demo/form_demo.dart';
 import 'package:nihao_flutter/demo/material_components.dart';
+import 'package:nihao_flutter/demo/state/state-management.dart';
 import 'demo/layout_demo.dart';
 import 'demo/basic_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
@@ -22,7 +23,7 @@ class App extends StatelessWidget {
       // home: NavigatorDemo(),
       // home: Home(),
       // home: SliverDemo(),
-      initialRoute: '/mdc',
+      initialRoute: '/state-management',
       // initialRoute: '/',
       // 顶层路由表
       routes: {
@@ -30,6 +31,7 @@ class App extends StatelessWidget {
         '/about': (context) => AboutPage(title: 'About'),
         '/form': (context) => FormDemo(),
         '/mdc': (context) => MaterialComponents(),
+        '/state-management': (context) => StateManagementDemo(),
       },
       // 全局Theme
       theme: ThemeData(
